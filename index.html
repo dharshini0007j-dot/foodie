@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="NPRCET Student Hub - Your Smart College Companion"
+    >
+
+    <title>NPRCET Student Hub | Your Smart College Companion</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVIGATION BAR
+    ====================================================== -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <span>
+                    NPRCET
+                    <small>Student Hub</small>
+                </span>
+            </a>
+
+            <!-- Mobile hamburger button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#announcements" class="nav-link">Announcements</a>
+                <a href="#materials" class="nav-link">Study Materials</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#attendance" class="nav-link">Attendance</a>
+                <a href="#internship" class="nav-link">Internship</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contacts" class="nav-link">Contacts</a>
+
+                <!-- Dark mode -->
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode"
+                >
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+        <section class="hero" id="home">
+
+            <div class="hero-bg-circle circle-one"></div>
+            <div class="hero-bg-circle circle-two"></div>
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-bolt"></i>
+                        NPR College of Engineering and Technology
+                    </span>
+
+                    <h1>
+                        NPRCET
+                        <span>Student Hub</span>
+                    </h1>
+
+                    <h2>Everything Students Need in One Place</h2>
+
+                    <p>
+                        Access study materials, announcements, events,
+                        internships, attendance tools and important college
+                        information from one simple platform.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#quick-access" class="btn btn-primary">
+                            Explore Hub
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#attendance" class="btn btn-outline">
+                            <i class="fa-solid fa-calculator"></i>
+                            Calculate Attendance
+                        </a>
+
+                    </div>
+
+                    <div class="hero-tagline">
+                        <span>Learn</span>
+                        <span>•</span>
+                        <span>Connect</span>
+                        <span>•</span>
+                        <span>Grow</span>
+                        <span>•</span>
+                        <span>Achieve</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Engineering-style visual -->
+                <div class="hero-visual">
+
+                    <div class="tech-orbit orbit-one"></div>
+                    <div class="tech-orbit orbit-two"></div>
+
+                    <div class="hero-card-main">
+
+                        <div class="hero-card-top">
+                            <span class="status-dot"></span>
+                            Student Portal
+                        </div>
+
+                        <div class="hero-cap">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h3>Smart Learning</h3>
+
+                        <p>
+                            Learn. Build. Innovate.
+                        </p>
+
+                        <div class="hero-mini-grid">
+
+                            <div>
+                                <i class="fa-solid fa-book-open"></i>
+                                <span>Notes</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>Events</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Careers</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Progress</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Study Materials</span>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>Latest Updates</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             GLOBAL SEARCH
+        ====================================================== -->
+        <section class="global-search-section">
+
+            <div class="container">
+
+                <div class="global-search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="globalSearch"
+                        placeholder="Search NPRCET Student Hub..."
+                        aria-label="Search NPRCET Student Hub"
+                    >
+
+                    <span id="searchStatus" class="search-status">
+                        Search the student hub
+                    </span>
+
+                </div>
+
+                <div id="globalSearchResults" class="global-results"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUICK ACCESS
+        ====================================================== -->
+        <section class="section" id="quick-access">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        QUICK ACCESS
+                    </span>
+
+                    <h2>Everything You Need</h2>
+
+                    <p>
+                        Quickly access important student resources
+                        from one convenient place.
+                    </p>
+
+                </div>
+
+
+                <div class="quick-grid">
+
+                    <article class="quick-card">
+
+                        <div class="card-icon blue">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+
+                        <h3>Announcements</h3>
+
+                        <p>
+                            Stay updated with important college
+                            announcements and notices.
+                        </p>
+
+                        <a href="#announcements" class="card-link">
+                            View Updates
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="quick-card">
+
+                        <div class="card-icon purple">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <h3>Study Materials</h3>
+
+                        <p>
+                            Find department-wise notes and
+                            learning resources.
+                        </p>
+
+                        <a href="#materials" class="card-link">
+                            Explore Materials
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="quick-card">
+
+                        <div class="card-icon orange">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <h3>Events</h3>
+
+                        <p>
+                            Discover upcoming workshops, symposiums,
+                            hackathons and events.
+                        </p>
+
+                        <a href="#events" class="card-link">
+                            View Events
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="quick-card">
+
+                        <div class="card-icon green">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+
+                        <h3>Attendance Calculator</h3>
+
+                        <p>
+                            Calculate your attendance percentage
+                            instantly.
+                        </p>
+
+                        <a href="#attendance" class="card-link">
+                            Calculate Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="quick-card">
+
+                        <div class="card-icon pink">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <h3>Internship & Placement</h3>
+
+                        <p>
+                            Explore career opportunities and
+                            placement preparation resources.
+                        </p>
+
+                        <a href="#internship" class="card-link">
+                            Explore Careers
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="quick-card">
+
+                        <div class="card-icon cyan">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <h3>Important Contacts</h3>
+
+                        <p>
+                            Quickly find important college
+                            departments and contacts.
+                        </p>
+
+                        <a href="#contacts" class="card-link">
+                            View Contacts
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ANNOUNCEMENTS
+        ====================================================== -->
+        <section class="section section-alt" id="announcements">
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div>
+                        <span class="section-label">
+                            LATEST UPDATES
+                        </span>
+
+                        <h2>Announcements</h2>
+
+                        <p>
+                            Important updates and notices for students.
+                        </p>
+                    </div>
+
+                    <div class="section-search">
+                        <i class="fa-solid fa-search"></i>
+
+                        <input
+                            type="search"
+                            id="announcementSearch"
+                            placeholder="Search announcements..."
+                            aria-label="Search announcements"
+                        >
+                    </div>
+
+                </div>
+
+                <!-- JavaScript dynamically creates announcement cards -->
+                <div
+                    class="announcement-grid"
+                    id="announcementContainer"
+                ></div>
+
+                <p
+                    class="empty-message hidden"
+                    id="announcementEmpty"
+                >
+                    No announcements found.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             STUDY MATERIALS
+        ====================================================== -->
+        <section class="section" id="materials">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LEARNING RESOURCE
+                    </span>
+
+                    <h2>Study Materials</h2>
+
+                    <p>
+                        Find notes, PDFs and learning resources
+                        according to your department.
+                    </p>
+
+                </div>
+
+
+                <!-- Department filters -->
+                <div class="filter-tabs" id="departmentFilters">
+
+                    <button class="filter-btn active" data-department="All">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-department="EEE">
+                        EEE
+                    </button>
+
+                    <button class="filter-btn" data-department="CSE">
+                        CSE
+                    </button>
+
+                    <button class="filter-btn" data-department="ECE">
+                        ECE
+                    </button>
+
+                    <button class="filter-btn" data-department="Mechanical">
+                        Mechanical
+                    </button>
+
+                    <button class="filter-btn" data-department="Civil">
+                        Civil
+                    </button>
+
+                    <button class="filter-btn" data-department="General">
+                        General
+                    </button>
+
+                </div>
+
+
+                <div class="material-search">
+
+                    <i class="fa-solid fa-search"></i>
+
+                    <input
+                        type="search"
+                        id="materialSearch"
+                        placeholder="Search study materials..."
+                        aria-label="Search study materials"
+                    >
+
+                </div>
+
+
+                <!-- JavaScript dynamically creates materials -->
+                <div
+                    class="material-grid"
+                    id="materialContainer"
+                ></div>
+
+                <p
+                    class="empty-message hidden"
+                    id="materialEmpty"
+                >
+                    No study materials found.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             EVENTS
+        ====================================================== -->
+        <section class="section section-alt" id="events">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        WHAT'S HAPPENING
+                    </span>
+
+                    <h2>Upcoming Events</h2>
+
+                    <p>
+                        Discover technical, academic, cultural
+                        and student events.
+                    </p>
+
+                </div>
+
+
+                <!-- JavaScript dynamically creates events -->
+                <div
+                    class="event-grid"
+                    id="eventContainer"
+                ></div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ATTENDANCE CALCULATOR
+        ====================================================== -->
+        <section class="section" id="attendance">
+
+            <div class="container attendance-grid">
+
+                <div class="attendance-info">
+
+                    <span class="section-label">
+                        STUDENT TOOL
+                    </span>
+
+                    <h2>Attendance Calculator</h2>
+
+                    <p>
+                        Quickly calculate your current attendance
+                        percentage and find out how many more classes
+                        you need to attend to reach 75%.
+                    </p>
+
+                    <div class="attendance-tips">
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>90% and above — Excellent</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>75%–89% — Good</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Below 75% — Attendance Shortage</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="calculator-card">
+
+                    <form id="attendanceForm">
+
+                        <div class="form-group">
+
+                            <label for="totalClasses">
+                                Total Classes
+                            </label>
+
+                            <input
+                                type="number"
+                                id="totalClasses"
+                                min="1"
+                                placeholder="Example: 40"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="attendedClasses">
+                                Attended Classes
+                            </label>
+
+                            <input
+                                type="number"
+                                id="attendedClasses"
+                                min="0"
+                                placeholder="Example: 32"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary full-width"
+                        >
+                            <i class="fa-solid fa-calculator"></i>
+                            Calculate Attendance
+                        </button>
+
+                        <button
+                            type="button"
+                            id="resetAttendance"
+                            class="btn btn-secondary full-width"
+                        >
+                            <i class="fa-solid fa-rotate-left"></i>
+                            Reset
+                        </button>
+
+                    </form>
+
+
+                    <div
+                        class="attendance-result hidden"
+                        id="attendanceResult"
+                    >
+
+                        <div class="percentage-circle">
+                            <span id="attendancePercentage">0%</span>
+                        </div>
+
+                        <h3 id="attendanceStatus">
+                            Attendance Status
+                        </h3>
+
+                        <p id="attendanceMessage"></p>
+
+                        <div class="result-extra">
+
+                            <strong>
+                                Additional classes required:
+                            </strong>
+
+                            <span id="additionalClasses">0</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             INTERNSHIP & PLACEMENT
+        ====================================================== -->
+        <section class="section section-alt" id="internship">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        CAREER DEVELOPMENT
+                    </span>
+
+                    <h2>Internship & Placement</h2>
+
+                    <p>
+                        Build your skills and prepare for your
+                        next career opportunity.
+                    </p>
+
+                </div>
+
+
+                <div class="career-grid">
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-building"></i>
+                        <h3>Internship Opportunities</h3>
+                        <p>
+                            Explore internships to gain practical
+                            industry experience.
+                        </p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </article>
+
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Core EEE Jobs</h3>
+                        <p>
+                            Discover electrical, power, automation
+                            and electronics career paths.
+                        </p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </article>
+
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>IT Jobs</h3>
+                        <p>
+                            Explore software, development,
+                            testing and technology roles.
+                        </p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </article>
+
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-landmark"></i>
+                        <h3>Government Jobs</h3>
+                        <p>
+                            Prepare for government and public
+                            sector opportunities.
+                        </p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </article>
+
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>Placement Preparation</h3>
+                        <p>
+                            Build aptitude, technical and
+                            interview skills.
+                        </p>
+                        <a href="#placement-preparation" class="btn-small">
+                            Explore
+                        </a>
+                    </article>
+
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <h3>Resume Building</h3>
+                        <p>
+                            Create a clear and professional
+                            student resume.
+                        </p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </article>
+
+
+                    <article class="career-card">
+                        <i class="fa-solid fa-comments"></i>
+                        <h3>Interview Preparation</h3>
+                        <p>
+                            Prepare for HR, technical and
+                            communication rounds.
+                        </p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </article>
+
+                </div>
+
+
+                <!-- Placement preparation -->
+                <div
+                    class="placement-box"
+                    id="placement-preparation"
+                >
+
+                    <div class="placement-heading">
+
+                        <span class="section-label">
+                            GET READY
+                        </span>
+
+                        <h3>Placement Preparation</h3>
+
+                        <p>
+                            Focus on these six important areas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="placement-list">
+
+                        <div class="placement-item">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Aptitude</span>
+                        </div>
+
+                        <div class="placement-item">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Technical Interview</span>
+                        </div>
+
+                        <div class="placement-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>HR Interview</span>
+                        </div>
+
+                        <div class="placement-item">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Resume</span>
+                        </div>
+
+                        <div class="placement-item">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </div>
+
+                        <div class="placement-item">
+                            <i class="fa-solid fa-comments"></i>
+                            <span>Communication Skills</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ACHIEVEMENTS
+        ====================================================== -->
+        <section class="section" id="achievements">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        STUDENT SUCCESS
+                    </span>
+
+                    <h2>Achievements</h2>
+
+                    <p>
+                        Celebrate student excellence and innovation.
+                    </p>
+
+                </div>
+
+
+                <!-- JavaScript dynamically creates achievements -->
+                <div
+                    class="achievement-grid"
+                    id="achievementContainer"
+                ></div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             IMPORTANT CONTACTS
+        ====================================================== -->
+        <section class="section section-alt" id="contacts">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        NEED HELP?
+                    </span>
+
+                    <h2>Important Contacts</h2>
+
+                    <p>
+                        Useful college departments and support contacts.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <!--
+                        PLACEHOLDER DATA:
+                        Replace the phone, email and location below
+                        with your actual college information.
+                    -->
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+
+                        <h3>College Office</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>college@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>NPRCET Campus</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+
+                        <h3>Examination Cell</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>exam@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Examination Office</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <h3>Placement Cell</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>placement@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Placement Cell</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+
+                        <h3>Training & Internship</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>training@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Training Office</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h3>Department Office</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>department@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Department Office</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                        <h3>Library</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>library@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Central Library</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h3>Student Support</h3>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>XXXXXXXXXX</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>support@example.com</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Student Support Centre</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+
+                    <span>
+                        NPRCET
+                        <small>Student Hub</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Your Smart College Companion
+                </p>
+
+                <p class="footer-tagline">
+                    Learn • Connect • Grow • Achieve
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#materials">Study Materials</a>
+                <a href="#events">Events</a>
+                <a href="#internship">Internship</a>
+                <a href="#contacts">Contacts</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>Connect</h3>
+
+                <!-- Replace # with your actual social media URLs -->
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 NPRCET Student Hub. All rights reserved.
+                </p>
+
+                <p>
+                    Built for students • HTML • CSS • JavaScript
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back to top -->
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Your JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
